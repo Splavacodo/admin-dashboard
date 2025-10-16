@@ -17,20 +17,23 @@ body {
 
     display: grid;
     grid-template-columns: 1fr 6fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 3fr;
 }
 
 .sidebar {
     grid-row: 1 / 3;
     grid-column: 1 / 2;
 
-    background-color: #2E2B26;
+    background-color: #1C1B19;
 }
 
 .header {
-    border: 1px black dashed;
     grid-row: 1 / 2;
     grid-column: 2 / 3;
+
+    padding: 24px 48px;
+    background-color: #22211E;
+    color: white; 
 }
 
 
@@ -69,7 +72,7 @@ body {
     gap: 12px; 
 
     font-size: 16px; 
-    background-color: #2E2B26;
+    background-color: #1C1B19;
     color: white; 
     border: none;
 
@@ -84,5 +87,106 @@ body {
 
 .option:hover {
     text-decoration: underline; 
+    cursor: pointer;
+}
+
+.header-top-section {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 36px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.search-container > img {
+    width: 24px;
+    height: 24px;
+    filter: invert(100%); 
+}
+
+input[type="search"] {
+    height: 36px; 
+    border-radius: 18px;
+    padding-left: 12px; 
+}
+
+input[type="search"]:focus {
+    outline: none; 
+}
+
+.profile-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.notification-icon {
+    background-color: #22211E;
+    border: none; 
+}
+
+.notification-icon:hover {
+    cursor: pointer; 
+}
+
+.notification-icon > img{
+    width: 24px;
+    height: 24px;
+    filter: invert(100%); 
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    font-weight: bold;
+}
+
+.header-bottom-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.greeting-header,
+.username {
+    font-weight: bold;
+}
+
+.greeting-header {
+    margin-bottom: 8px; 
+}
+
+.username {
+    font-size: 24px; 
+}
+
+.project-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 16px; 
+}
+
+.project-actions > button {
+    font-size: 16px;
+
+    width: 96px; 
+    border-radius: 18px;
+    padding: 8px; 
+
+    background-color: #1C1B19;
+    color: white; 
+    border: white 1px solid; 
+}
+
+.project-actions > button:hover {
+    text-decoration: underline;
     cursor: pointer;
 }
