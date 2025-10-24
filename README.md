@@ -5,5 +5,5 @@ This project includes an admin dashboard page for a website a user is logged int
 ![Admin Dashboard](./images/admin-dashboard-webpage.png)
 
 ## Credits
-Project Idea Credit: The Odin Project
-Icons: Pictogrammers' Material Design Icons
+- Project Idea Credit: The Odin Project
+- Icons: Pictogrammers' Material Design Icons
